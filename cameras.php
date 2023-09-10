@@ -18,4 +18,12 @@
             for ($cam = 101; $cam <= 150; $cam++) {
                 echo '<iframe width="700" height="405" src="http://player.cxtv.com.br/camcet.php?Cam=' . $cam . '" frameborder="0" allowfullscreen></iframe>';
             }
-            ?>
+           ?>
+           </div>
+        <div id="tabs-4">
+            <!-- Câmeras de 101 a 150 -->
+            <?php
+            for ($cam = 151; $cam <= 200; $cam++) {
+                echo '<iframe width="700" height="405" src="http://player.cxtv.com.br/camcet.php?Cam=' . $cam . '" frameborder="0" allowfullscreen></iframe>';
+            }
+           ?>
