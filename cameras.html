@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Câmeras públicas da CET SP</title>
+    <!-- Inclua as bibliotecas jQuery e jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <!-- Container para as abas -->
+    <div id="tabs">
+        <!-- Aba 1 -->
+        <ul>
+            <li><a href="#tabs-1">Página 1-50</a></li>
+            <li><a href="#tabs-2">Página 51-100</a></li>
+            <li><a href="#tabs-3">Página 101-150</a></li>
+            <!-- Adicione mais abas conforme necessário -->
+        </ul>
+
+        <!-- Conteúdo das abas -->
+        <div id="tabs-1">
+            <!-- Câmeras de 1 a 50 -->
+            <?php include('cameras.php') ?>
+        </div>
+        <!-- Adicione mais conteúdo de abas conforme necessário -->
+    </div>
+
+    <script>
+        // Inicialize as abas com jQuery UI
+        $(function() {
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+</html>
